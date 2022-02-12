@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: input()
+- text: 'input("Write what you want: ")'
+- text: 'writeline("Write what you want: ")'
+- text: 'print("Write what you want: ")'
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5915#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 12 Feb 2022 23:16:47 UTC
+record: -1
+selected_options:
+- 0
+- 1

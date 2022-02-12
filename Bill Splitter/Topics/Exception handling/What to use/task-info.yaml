@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: <code>except Exception</code>
+- text: <code>except Exceptions</code>
+- text: <code>except AllExceptions</code>
+- text: <code>except AllException</code>
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15299#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 12 Feb 2022 23:17:38 UTC
+record: -1
+selected_options:
+- 0
+custom_name: What to use?
