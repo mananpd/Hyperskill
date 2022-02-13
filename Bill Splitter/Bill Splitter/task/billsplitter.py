@@ -30,10 +30,10 @@ else:
     print()
 
     if input_lucky == 'Yes':
-        pay_per_person = round(bill / (len(guest) - 1), 2)
+        pay_per_person = int(round(bill / (len(guest) - 1), 2))
         bill_splitter = dict.fromkeys(guest, pay_per_person)
         bill_splitter[lucky_guest] = 0
     else:
-        pay_per_person = round(bill / (len(guest)), 2)
+        pay_per_person = int(round(bill / (len(guest)), 2))
         bill_splitter = dict.fromkeys(guest, pay_per_person)
     print(bill_splitter)
