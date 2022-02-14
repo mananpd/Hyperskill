@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0476846b-a6a4-4783-a0a1-dd5fe85fccd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Simple Chatty Bot/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/section-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/course-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simple Chatty Bot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple Chatty Bot/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -58,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644786052044</updated>
-      <workItem from="1644786061495" duration="15022000" />
+      <workItem from="1644786061495" duration="15128000" />
     </task>
     <servers />
   </component>
