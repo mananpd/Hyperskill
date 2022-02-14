@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0476846b-a6a4-4783-a0a1-dd5fe85fccd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Simple Chatty Bot/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Are they the same/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Find beautiful identity/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/answer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/Twins/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Identity testing/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Text Generator/course-remote-info.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="254UrJD0sk40oedNcGEXcMQSvyd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0476846b-a6a4-4783-a0a1-dd5fe85fccd3" name="Changes" comment="" />
+      <created>1644786052044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644786052044</updated>
+      <workItem from="1644786061495" duration="15022000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Loan_Calculator$Loan_Calculator_Annuity_payment.coverage" NAME="Loan Calculator/Annuity payment Coverage Results" MODIFIED="1644789631255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Loan_Calculator$Loan_Calculator_Differentiate_payment.coverage" NAME="Loan Calculator/Differentiate payment Coverage Results" MODIFIED="1644857055096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Loan_Calculator$Loan_Calculator_Beginning.coverage" NAME="Loan Calculator/Beginning Coverage Results" MODIFIED="1644786139920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Loan_Calculator$Loan_Calculator_Dreamworld.coverage" NAME="Loan Calculator/Dreamworld Coverage Results" MODIFIED="1644786926575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
