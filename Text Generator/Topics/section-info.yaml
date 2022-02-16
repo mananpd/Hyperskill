@@ -4,3 +4,5 @@ content:
 - How to read the documentation
 - How to read a traceback
 - Regexps in Python
+- Escaping in regexps
+- Regexp sets and ranges
