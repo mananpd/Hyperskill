@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87bf299a-5be7-45e2-b12a-5415b508a230" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Arithmetic Exam Application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Adding marks/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Adding marks/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Adding marks/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Mini-calculator/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Mini-calculator/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Mini-calculator/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/More tasks needed/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/More tasks needed/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/More tasks needed/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Task generator/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Task generator/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/Task generator/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/task/arithmetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Exam Application/task/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Planet sets/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Planet sets/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Planet sets/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Planet sets/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Rivers/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Rivers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Rivers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Rivers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Talents/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Talents/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Talents/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Talents/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Tourists/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Tourists/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Tourists/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/Tourists/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Set operations/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Reverse/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Reverse/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Reverse/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Reverse/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Slicing/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Checking inputs/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Checking inputs/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Checking inputs/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Checking inputs/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Testing user input/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/All about the epoch/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/All about the epoch/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/All about the epoch/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/All about the epoch/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Easy convert/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Easy convert/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Easy convert/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Easy convert/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Just a sec/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Just a sec/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Just a sec/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Just a sec/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Performance mesurement/answer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Performance mesurement/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Performance mesurement/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Performance mesurement/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Personal assistant/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Personal assistant/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Personal assistant/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Personal assistant/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Time module/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25GB8BYCLvXZOXNXspYZTUxVHgb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Jupyter Settings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87bf299a-5be7-45e2-b12a-5415b508a230" name="Changes" comment="" />
+      <created>1645143381482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645143381482</updated>
+      <workItem from="1645143409803" duration="9459000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Arithmetic_Exam_Application$Arithmetic_Exam_Application_Adding_marks.coverage" NAME="Arithmetic Exam Application/Adding marks Coverage Results" MODIFIED="1645196498267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Arithmetic_Exam_Application$Arithmetic_Exam_Application_Mini_calculator.coverage" NAME="Arithmetic Exam Application/Mini-calculator Coverage Results" MODIFIED="1645144266945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Arithmetic_Exam_Application$Arithmetic_Exam_Application_Task_generator.coverage" NAME="Arithmetic Exam Application/Task generator Coverage Results" MODIFIED="1645148046651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Arithmetic_Exam_Application$Arithmetic_Exam_Application_More_tasks_needed.coverage" NAME="Arithmetic Exam Application/More tasks needed Coverage Results" MODIFIED="1645153016423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
