@@ -39,5 +39,12 @@ files:
   text: '# Write your code here'
   learner_created: false
 feedback_link: https://hyperskill.org/projects/68/stages/366/implement#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nYou should make coffee exactly like in the\
+    \ example\n\nPlease find below the output of your program during this failed test.\n\
+    Note that the '>' character indicates the beginning of the input line.\n\n---\n\
+    \nWrite how many cups of coffee you will need:\n> \nFor 0 cups of coffee you will\
+    \ need:\n0 ml of water\n0 ml of milk\n0 g of coffee beans"
+  time: Fri, 18 Feb 2022 17:13:44 UTC
+record: 1
