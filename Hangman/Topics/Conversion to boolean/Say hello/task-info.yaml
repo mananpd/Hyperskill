@@ -1,0 +1,12 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: 'def say_hello(name):'
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10961#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 22 Feb 2022 18:48:56 UTC
+record: -1
