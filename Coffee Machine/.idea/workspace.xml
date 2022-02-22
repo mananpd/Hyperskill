@@ -1,149 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e624be4f-22ce-4ee8-b291-c359c24906cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Coffee Machine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Movie night/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Movie night/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Movie night/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Movie night/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Pumpkin/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Pumpkin/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Pumpkin/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Pumpkin/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Right triangle/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Right triangle/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Right triangle/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Right triangle/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Shopping/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Shopping/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Shopping/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Shopping/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Students/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Students/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Students/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Students/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class instances/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Dependency/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Dependency/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Dependency/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Dependency/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Let's rock/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Let's rock/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Let's rock/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Let's rock/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Something is wrong/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Something is wrong/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Something is wrong/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Something is wrong/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The Creator/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The Creator/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The Creator/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The Creator/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The housing problem/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The housing problem/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The housing problem/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/The housing problem/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Who is who/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Who is who/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Who is who/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/Who is who/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Class/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Full name/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Full name/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Full name/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Full name/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Functional decomposition/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/A good rule/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/A good rule/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/A good rule/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/A good rule/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Find the mistakes/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Find the mistakes/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Find the mistakes/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Find the mistakes/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Patients/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Patients/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Patients/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Patients/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Printing books/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Printing books/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Printing books/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Printing books/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Type of an object/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Type of an object/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Type of an object/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/Type of an object/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Magic methods/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/I have friends/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/I have friends/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/I have friends/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/I have friends/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Lightbulb/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Lightbulb/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Lightbulb/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Lightbulb/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Paint/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Paint/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Paint/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Paint/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Turtle/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Turtle/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Turtle/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/Turtle/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods and attributes/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Batman/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Batman/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Batman/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Batman/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/Methods/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topics/section-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arithmetic Exam Application/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arithmetic Exam Application/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arithmetic Exam Application/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arithmetic Exam Application/course-remote-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Brush up your code/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Brush up your code/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Buy, fill, take/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Buy, fill, take/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Estimate the number of servings/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Estimate the number of servings/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Ingredient calculator/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Ingredient calculator/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Keep track of the supplies/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Keep track of the supplies/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/Making coffee/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/Making coffee/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/lesson-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/task/machine/coffee_machine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/task/machine/coffee_machine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Machine/task/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Machine/task/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="e624be4f-22ce-4ee8-b291-c359c24906cc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +33,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645201319503</updated>
-      <workItem from="1645201324371" duration="22623000" />
+      <workItem from="1645201324371" duration="22901000" />
     </task>
     <servers />
   </component>
