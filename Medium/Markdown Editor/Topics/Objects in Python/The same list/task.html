@@ -1,0 +1,14 @@
+<h2>The same list?</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Let's say we have a list with grades of a student:</p> 
+  <pre><code class="language-python">grades = [10, 7, 8, 7, 9, 6]
+id1 = id(grades)              # 41602624</code></pre> 
+  <p>Then, the student retook the last exam, and the grade became better:</p> 
+  <pre><code class="language-python">grades[-1] = 9
+print(grades)       # [10, 7, 8, 7, 9, 9]
+id2 = id(grades)</code></pre> 
+  <p>Will <code class="language-python">id2</code> be the same as <code class="language-python">id1</code>? Please write <code class="language-python">"yes"</code> or <code class="language-python">"no"</code> in the text field below (without the quotes).</p>
+ </body>
+</html>

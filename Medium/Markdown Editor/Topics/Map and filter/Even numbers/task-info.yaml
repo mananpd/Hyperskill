@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: A
+- text: B
+- text: C
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8127#comment
+status: Solved
+record: -1

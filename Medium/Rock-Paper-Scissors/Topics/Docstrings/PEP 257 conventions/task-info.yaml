@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Module docstrings should also provide a brief one-line description.
+- text: In class docstrings you should indicate the information about methods, instance
+    variables, attributes, and so forth.
+- text: The description should be imperative.
+- text: The opening and the closing quotes should be on the same line.
+- text: There should be empty strings either before or after the docstring.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15302#comment
+status: Solved
+record: -1

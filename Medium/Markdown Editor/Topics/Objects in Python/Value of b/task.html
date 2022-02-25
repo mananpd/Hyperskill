@@ -1,0 +1,28 @@
+<h2>Value of b</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Lists, unlike strings, are mutable. We can use that to modify their data with indexes.</p> 
+  <p>Here's a simple piece of code. What will be the value of <code class="language-python">b</code> after each line of code?</p> 
+  <pre><code class="language-python">a = [1, 2, 3]
+b = a
+# what is the value of b?
+
+a[1] = 10
+# and here?
+
+b[0] = 20
+# what about now?
+
+a = [5, 6]
+# it is the last time, we promise. The value of b?</code></pre> 
+  <p>Please, enter the values in a single line. Separate the list elements with space and the lists — with a semicolon. For example:</p> 
+  <p>1 1 1; 2 2 2; 3 3 3; 4 4 4</p> 
+  <p><button class="btn-sm btn-outline-secondary" onclick="getElementById('hint-584').style.display='inline'"> Hint </button> </p>
+  <div id="hint-584" style="display:none;">
+   Since 
+   <code class="language-python">b = a</code>, they refer to the same object.
+  </div>
+  <p></p>
+ </body>
+</html>
