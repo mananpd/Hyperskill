@@ -1,0 +1,14 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    def number_of_frogs(year):
+        pass
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9517#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 01 Mar 2022 22:18:24 UTC
+record: -1

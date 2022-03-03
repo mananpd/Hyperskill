@@ -1,0 +1,14 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: "def list_sum(some_list):\n    if some_list == []:\n        return 0\n   \
+    \ # base case\n    elif ...:  \n        return some_list[0]\n    # recursive case\n\
+    \    else:\n        return"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7671#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 02 Mar 2022 01:59:34 UTC
+record: -1
