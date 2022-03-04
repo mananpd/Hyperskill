@@ -1,0 +1,388 @@
+type: edu
+custom_name: stage7
+files:
+- name: translator/translator.py
+  visible: true
+  text: |
+    print('Hello, World!')
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from hstest.stage_test import StageTest
+    from hstest.test_case import TestCase
+    from hstest.check_result import CheckResult
+    import requests
+    from itertools import chain
+    from bs4 import BeautifulSoup
+    import sys
+    import os
+
+
+    if sys.platform.startswith("win"):
+        import _locale
+        # pylint: disable=protected-access
+        _locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
+
+    CheckResult.correct = lambda: CheckResult(True, '')
+    CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
+
+    languages = ["arabic", "german", "english", "spanish", "french",
+                 "hebrew", "japanese", "dutch", "polish", "portuguese",
+                 "romanian", "russian", "turkish"]
+
+
+    class TranslatorTest(StageTest):
+        def generate(self):
+            return [
+                TestCase(args=['english', 'all', 'brrrrrrrrrrrrrrrrk'], check_function=self.check1),
+                TestCase(args=['english', 'korean', 'hello'], check_function=self.check2),
+                TestCase(args=['french', 'all', 'chute'], check_function=self.check3, attach='french\nall\nchute')
+            ]
+
+        def check1(self, reply, attach):
+            reply = reply.lower()
+            if 'unable' not in reply:
+                return CheckResult.wrong('Your program does not output an error message for an nonexistent word.')
+            return CheckResult.correct()
+
+        def check2(self, reply, attach):
+            if 'support korean' in reply.lower():
+                return CheckResult.correct()
+
+            return CheckResult.wrong(
+                'Your program does not output an error message about an unsupported language.')
+
+        def check_output(self, output, true_results):
+            output = output.lower()
+
+            for language in true_results:
+                translations_title = '{} translation'.format(language).lower()
+                if translations_title not in output:
+                    return False, 'The title \"{0} translation\" was not found.'.format(language)
+                examples_title = "{0} example".format(language).lower()
+                translations = output[output.index(translations_title):].strip()
+
+                if examples_title not in translations.lower():
+                    return False, 'The title \"{0}\" was not found.\n' \
+                                  'Make sure you output this title before example sentences for this language,\n' \
+                                  'and that you output it after translations for it.'.format(examples_title)
+
+                # the beginning of the section with context examples
+                examples_index = translations.index(examples_title)
+                try:
+                    # the end of the section with context examples
+                    examples_end = translations.index('translation', examples_index)
+                except ValueError:
+                    # if the language is last in the list, the end of the context examples is the end of the output
+                    examples_end = None
+                examples = translations[examples_index:examples_end].split('\n')
+                translations = translations[:examples_index].strip().split('\n')
+                examples = [line for line in examples if line and examples_title not in line]
+                translations = [line for line in translations if line and translations_title not in line]
+
+                if len(translations) == 0:
+                    return False, "No translations for {0} are found.\n" \
+                                  "Make sure that each translated word is placed in a new line\n" \
+                                  "and that translations precede examples.".format(language)
+
+                if len(examples) == 0:
+                    return False, "No context examples for {0} are found.\n" \
+                                  "Make sure that your context examples follow the translations\n" \
+                                  "and that each example is placed in a new line.".format(language)
+
+                true_translations, true_examples = true_results[language]
+                if true_translations == "Connection error":
+                    return CheckResult.wrong("Connection error occurred while connecting to the context.reverso.net\n"
+                                             "Please, try again a bit later.")
+
+                translations_intersection = [True for user_translation in translations
+                                             if user_translation in true_translations]
+                if not translations_intersection:
+                    return False, "No correct translations for {0} are found.\n" \
+                                  "Please, output the first found translation " \
+                                  "of the given word for this language if you output one translation.".format(language)
+
+                examples_intersection = [True for user_example in examples if user_example in true_examples]
+                if not examples_intersection:
+                    return False, "No correct examples for {0} are found.\n" \
+                                  "If you output only one example for each language,\n" \
+                                  "please, use the first example that you find on the web page.".format(language)
+
+            return True, ''
+
+        def check3(self, reply, attach):
+            l1, l2, word = attach.split("\n")
+            result_dict = get_results(l1, l2, word)
+
+            file_name = word + '.txt'
+            if not os.path.exists(file_name):
+                return CheckResult.wrong("Looks like you didn't create a file named <word>.txt \n"
+                                         "where <word> is the word that should be translated.")
+
+            with open(file_name, 'r', encoding='utf-8') as fh:
+                try:
+                    output = fh.read()
+                except UnicodeDecodeError:
+                    return CheckResult.wrong("UnicodeDecodeError occurred while reading your file. \n"
+                                             "Perhaps you used the wrong encoding? Please, use utf-8 encoding.")
+
+            if output.lower().strip() not in reply.lower().strip():
+                return CheckResult.wrong("The output to the terminal does not seem to contain the content of the file.\n"
+                                         "Please make sure that you output the results to the terminal as well.\n"
+                                         "Also, make sure that the output to the terminal contains all the data written to the file unmodified.")
+
+            is_correct, feedback = self.check_output(output, result_dict)
+            if not is_correct:
+                if "Connection error" not in feedback:
+                    feedback = 'A problem occurred while reading the file that you created.\n' + feedback
+                return CheckResult.wrong(feedback)
+
+            try:
+                os.remove(file_name)
+            except:
+                return CheckResult.wrong("An error occurred while your file was being removed.\n"
+                                         "Please make sure that you close all the files after writing the results in them.")
+
+            return CheckResult.correct()
+
+
+    def get_results(l1, l2, word):
+        if l2 == 'all':
+            target_languages = [language for language in languages if language != l1]
+        else:
+            target_languages = [l2]
+
+        result_dict = {}
+
+        for lang_to in target_languages:
+            url = f"https://context.reverso.net/translation/{l1}-{lang_to}/{word}"
+            user_agent = 'Mozilla/5.0'
+            try:
+                response = requests.get(url, timeout=10, headers={'User-Agent': user_agent})
+            except requests.exceptions.ReadTimeout:
+                return "Connection error", "Connection error"
+            except requests.exceptions.ConnectionError:
+                return "Connection error", "Connection error"
+
+            raw_contents = BeautifulSoup(response.content, 'html.parser')
+            translations = raw_contents.find_all('a', {"class": 'translation'})
+            sentences_src, sentences_target = \
+                raw_contents.find_all('div', {"class": "src ltr"}), \
+                raw_contents.find_all('div', {"class": ["trg ltr", "trg rtl arabic", "trg rtl"]})
+
+            translation_list = [translation.get_text().strip().lower() for translation in translations]
+            sentence_list = [sentence.get_text().strip().lower() for sentence in
+                             list(chain(*[sentence_pair for sentence_pair in zip(sentences_src, sentences_target)]))]
+            result_dict[lang_to] = [set(translation_list), set(sentence_list)]
+
+        return result_dict
+
+
+    if __name__ == '__main__':
+        TranslatorTest('translator.translator').run_tests()
+  learner_created: false
+- name: translator/noches.txt
+  visible: true
+  text: |+
+    dutch Translations:
+    nachten
+    avond
+    nacht
+    avonden
+    dagen
+    overnachtingen
+    nachtjes
+    Nights
+    Noches
+    slapen
+    wel
+    vaak
+    soms
+    zomeravonden
+    thema-avonden
+
+    dutch Examples:
+    Últimamente me levanto por las noches preocupada.
+    Ik ben de meeste nachten op geweest de laatste tijd en heb me zorgen gemaakt.
+    Algunas noches juraría que aún puedo oírlo.
+
+    Adoro el silencio de las noches nevadas.
+    Ik zweer dat ik hem sommige nachten nog steeds kan horen.
+    Así que ahora tienes tus noches de pizza, tienes tus noches de microondas, tienes tus noches de picoteo, tienes tus noches de apáñatelas tu mismo, etcétera.
+
+    Se despertó dos noches seguidas gritando.
+    Ik hou van de stilte op een sneeuwwitte avond.
+    Habrás largas noches, argumentos calurosos.
+
+    Diversión en Tenerife. Descubre sus noches diferentes.
+    Dus nu heb je je pizza avond, je hebt je magnetron avond, en je snack avond, je hebt zelfbediening avond enzovoort.
+    Habrá noches largas de calurosas discusiones.
+
+    Muchas noches también soñasteis con este maravilloso lugar.
+    Dat is al de tweede nacht dat ze schreeuwend wakker wordt.
+    Pensé que necesitaba algo para pasar las noches.
+
+    Si simplemente supiera cómo pasabas tus noches.
+    Er zullen lange nachten zijn, verhitte argumenten.
+    Pasó incontables noches en nuestra casa.
+
+    Estuve tres noches en un apartamento moderno.
+    Amusement op Tenerife. Ontdek waarom de nachten hier anders zijn.
+    El aparcamiento es gratuito únicamente durante las noches reservadas.
+
+    Sabes, he estado cinco noches.
+    Er zullen lange nachten zijn, verhitte argumenten.
+    Pensábamos que te quedarías unas pocas noches.
+
+    Una nueva primavera conquistará las noches oscuras de invierno.
+    Jullie hebben eveneens vele nachten van deze wonderbaarlijke plek gedroomd.
+    Tendría André noches sin pegar ojo.
+
+    Las últimas dos noches oí disparos.
+    Vond dat ik iets nodig had om de nachten voorbij te komen.
+    Celebraremos la noche de las noches.
+
+
+  learner_created: true
+- name: rue.txt
+  visible: true
+  text: 'Polish Translations:ulicauldrogauliczkaprzecznicyaleialejceulicznyroguniedalekochodnikuswjezdniRueStPolish
+    Examples:La rue n''est pas un lieu pour ces conflits.Ulica nie jest areną dla
+    takich konfliktów.En 1946 la rue Révolutionnaire était rebaptisée la rue de Suvorov.Varsovie
+    rue de Poznan :: Maison famille Biele (1879).W 1946 r. ulica rewolucyjny jestem
+    przemianowany do ulica Suworow.rue Kłopotowskiego, près du carrefour avec la rue
+    FloriańskaDemandez-leur pourquoi la rue est bloquée.Warszawa ul. Poznańska:: Kamienica
+    rodziny Biele (1879).Demandez la rue Tullumayo, montez.La meilleure réunion Weight
+    Watchers est dans la 23e rue.ul. Kłopotowskiego, przy skrzyżowaniu z ul. FloriańskąTu
+    sais que la rue est dangereuse.La rue commerçante Bahnhofstrasse est accessible
+    en quelques minutes à pied.Otwórz okno i spytaj czemu droga jest zablokowana.Les
+    murs épais du bâtiment, idéalement protéger contre les bruits de rue.Celui-là
+    sème la terreur rue Morgue depuis des mois.Zapytaj o ulicy Tullumayo, iść w górę.L''entrée
+    de notre auberge est située sur la rue Jaskolcza, une petite rue reliant Wrocalwska
+    et Szkolna rue.La première rue avec le tramway sentiers est la rue Joaquim Murtinho.Najlepsze
+    spotkanie Strażników Wagi na 23 ulicy.À la 2e rue à droite, rue Maubeuge.Nous
+    devons faire rue par rue pour trouver ce van.Wiesz jak niebezpiecznie jest na
+    ulicach.Si vous venez de trouver Omonoia Spuare Septembre 3e rue et marcher jusqu''à
+    l''Stournari rue.Traversez la rue, tournez à gauche et descendez cette rue jusqu''au
+    Northfields Hostel, London, au numéro 264.Obiekt położony jest zaledwie kilka
+    minut spacerem od ulicy handlowej Bahnhofstrasse.Mes hommes se sont battus rue
+    par rue dans le quartier rebelle quand le Genéral Masoud a déclenché une arme
+    biologique au dessus de nous.Il compte le trouver en fouillant Londres rue après
+    rue ?Grube mury kamienicy idealnie chronią przed odgłosami dochodzącymi z ulicy.Une
+    autre rue qu''il ne faut pas manquer à Prague est la rue Nerudova.'
+  learner_created: true
+- name: ничтожество.txt
+  visible: true
+  text: English Translations:nothingnobodyloserlowlifenonentitypunkpatheticschmucknothingnesspipsqueaktwerpdufferpip-squeaktwirpsleazewhippersnapperdeadlossloseljerkpieceofshitEnglish
+    Examples:Ты просто испорченное маленькое ничтожество, вот кто ты!You're just a
+    spoiled little nothing, that's what you are!На самом деле, я - ничтожество.Он
+    просто злобное и завистливое ничтожество.In fact, I have nothing.А вот местное
+    ничтожество наслаждается своим подобием.Спустя столько лет вдруг заявляется это
+    ничтожество, Очень мило.He's just a twisted, jealous nobody.Я не ничтожество,
+    которым вы меня считаете.Она означает,... что я - ничтожество.And here's a local
+    nobody enjoying his likeness.они все думают, что я - ничтожество.И расскажу ему,
+    какое ты ничтожество и подлец.Your loser ex-husband shows up after all this time...Я
+    выколю тебе глаз, ты ничтожество.Не нужно было делать из меня такое ничтожество.I'm
+    not the loser you think I am.Ты полное ничтожество во всех возможных смыслах.Ты
+    меня превратила в полное ничтожество.It means... that I am nothing.Ты ничтожество
+    раз не можешь добить одну раненую обезьяну.Как огромное, бесконечное, вечное ничтожество.they
+    all think that I - nothing.А теперь это ничтожество превращает его жизнь в ад."Убирайся
+    отсюда", как будто она ничтожество.And you'll find out how miserable and scoundrel
+    you are.Этот Джо Миллс, это ничтожество.Только ничтожество отдаст свою женщину
+    ради еды.I am going to take your eye, you piece of trash.А слабость, бездарность
+    и ничтожество неистребимы .
+  learner_created: true
+- name: translator/hello.txt
+  visible: true
+  text: |+
+    arabic Translations:
+    مرحبا
+    أهلا
+    الو
+    هل
+    سلام
+    هالو
+    السلام عليكم
+    صباح الخير
+    .مرحبا
+    هاللو
+    مساء الخير
+    صباح النور
+    التحية
+
+    arabic Examples:
+    margot, say hello to pavlov.
+    (مارجوت)،قولي مرحبًا لـ (بافالوف).
+    Don't even say hello anymore.
+
+    hello hello i m so sorry to hear about vice president mallory
+    لم يعودوا يقولون مرحبًا حتى بعد الآن.
+    hello, and welcome to clark after dark.
+
+    Please tell her I say hello.
+    أهلاً أنا آسفة لسماع نبأ وفاة نائب الرئيس
+    Brrr-ing, hello, who's this?
+
+    Well, hello, original family.
+    أهلاً، ومرحباً بكم في "كلارك بعد حلول الظلام"
+    Guys, say hello to Jenny.
+
+    Something crazy, like say hello.
+    من فضلك أخبرها أني قلت "مرحباً"
+    It needs to say hello because it can.
+
+    why didn't you say hello?
+    بررر جي، مرحبا، من هو هذا؟
+    say hello he's new - my name is gralak
+
+    Yes hello, Dr Laraby please?
+    حسنا، مرحبا، أيها العائلة الأصلية.
+    Still, we should say hello.
+
+    Say hello to the nice psychiatrist, Feggin.
+    قولوا مرحباً لـ(جيني) يا رفاق
+    Charlie, say hello to Danny O'Day.
+
+    And, hello, 30-piece orchestra.
+    شيء ما مجنون مثلاً أن أقول مرحباً.
+    Well, hello Mr. Potter.
+
+    hello will put the dog juju in the barn
+    يجب أن يقول "مرحباً" لأن يمكنه فعلها.
+    Say hello to Beelzebub after you fly first class
+
+
+  learner_created: true
+- name: noches.txt
+  visible: true
+  text: Dutch Translations:nachtenavondnachtavondendagenovernachtingennachtjesNightsNochesslapenwelvaaksomszomeravondenthema-avondenDutch
+    Examples:Últimamente me levanto por las noches preocupada.Ik ben de meeste nachten
+    op geweest de laatste tijd en heb me zorgen gemaakt.Algunas noches juraría que
+    aún puedo oírlo.Adoro el silencio de las noches nevadas.Ik zweer dat ik hem sommige
+    nachten nog steeds kan horen.Así que ahora tienes tus noches de pizza, tienes
+    tus noches de microondas, tienes tus noches de picoteo, tienes tus noches de apáñatelas
+    tu mismo, etcétera.Se despertó dos noches seguidas gritando.Ik hou van de stilte
+    op een sneeuwwitte avond.Habrás largas noches, argumentos calurosos.Diversión
+    en Tenerife. Descubre sus noches diferentes.Dus nu heb je je pizza avond, je hebt
+    je magnetron avond, en je snack avond, je hebt zelfbediening avond enzovoort.Habrá
+    noches largas de calurosas discusiones.Muchas noches también soñasteis con este
+    maravilloso lugar.Dat is al de tweede nacht dat ze schreeuwend wakker wordt.Pensé
+    que necesitaba algo para pasar las noches.Si simplemente supiera cómo pasabas
+    tus noches.Er zullen lange nachten zijn, verhitte argumenten.Pasó incontables
+    noches en nuestra casa.Estuve tres noches en un apartamento moderno.Amusement
+    op Tenerife. Ontdek waarom de nachten hier anders zijn.El aparcamiento es gratuito
+    únicamente durante las noches reservadas.Sabes, he estado cinco noches.Er zullen
+    lange nachten zijn, verhitte argumenten.Pensábamos que te quedarías unas pocas
+    noches.Una nueva primavera conquistará las noches oscuras de invierno.Jullie hebben
+    eveneens vele nachten van deze wonderbaarlijke plek gedroomd.Tendría André noches
+    sin pegar ojo.Las últimas dos noches oí disparos.Vond dat ik iets nodig had om
+    de nachten voorbij te komen.Celebraremos la noche de las noches.
+  learner_created: true
+feedback_link: https://hyperskill.org/projects/99/stages/549/implement#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Fri, 04 Mar 2022 02:29:33 UTC
+record: -1
