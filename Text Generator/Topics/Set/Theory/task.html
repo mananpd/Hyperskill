@@ -3,7 +3,7 @@
  <head></head>
  <body>
   <p>When you need to get rid of duplicates in a sequence or intend to perform some mathematical operations, you may use a <strong>set</strong> object. A<strong> set</strong> is an <strong>unordered </strong>container of <strong>hashable </strong>objects<strong>. </strong>You will learn more about hashable objects later, for now, remember that only immutable data types can be elements of a set. Due to their form, sets <strong>do NOT </strong>record element position or order of insertion, so you cannot retrieve an element by its index.</p> 
-  <h5 style="text-align: center;">Creating sets</h5> 
+  <h5 style="text-align: center;" id="creating-sets">Creating sets</h5> 
   <p>First things first, we create a set by listing its elements in curly braces. The only exception would be an <strong>empty set </strong>that can be formed with the help of a <code class="language-python">set()</code>function:</p> 
   <pre><code class="language-python">empty_set = set()
 print(type(empty_set))   # &lt;class 'set'&gt;
@@ -30,7 +30,7 @@ print(set(states))  # {'Russia', 'USA', 'Italy', 'Germany'}</code></pre>
   <pre><code class="language-python">set1 = {'A', 'B', 'C'}
 set2 = {'B', 'C', 'A'}
 print(set1 == set2)  # True</code></pre> 
-  <h5 style="text-align: center;">Working with a set’s elements</h5> 
+  <h5 style="text-align: center;" id="working-with-a-sets-elements">Working with a set’s elements</h5> 
   <p>You can:</p> 
   <ul> 
    <li>get the number of a set's elements with the help of <code class="language-python">len()</code> function.</li> 
@@ -46,8 +46,8 @@ print(1 in nums, 4 not in nums)  # True True</code></pre>
 nums.add(5)
 print(nums)  # {1, 2, 3, 5}
 
-another_nums = {6, 7}
-nums.update(another_nums)
+more_nums = {6, 7}
+nums.update(more_nums)
 print(nums)  # {1, 2, 3, 5, 6, 7}
  
 # we can also add a list
@@ -82,10 +82,10 @@ print(nums)  # {2, 3}</code></pre>
   <ul> 
    <li> <p>delete all elements from the set with <code class="language-python">clear()</code> method.</p> </li> 
   </ul> 
-  <h5 style="text-align: center;">When to use sets?</h5> 
+  <h5 style="text-align: center;" id="when-to-use-sets">When to use sets?</h5> 
   <p>One important feature of sets (and all unordered collections in general) is that they allow you to run membership tests <em>much faster</em> than lists. In real life, if you have a list and you try to check by hand whether a particular item is present there, the only way to do this is to look through the entire list until you find this item. Python does the same thing: it looks for the needed item starting from the beginning of a list, because it has no idea where it may be placed. If the item is located at the end or there is no such item at all, Python will iterate over the majority of items in the list by the time it discovers this fact. So, in case your program is looking for items in a large list many times, it will be slow.</p> 
   <p>And that's where sets come to help us! In sets membership testing works almost instantly, since they use a different way of storing and arranging values. So, depending on the situation, you need to decide what is more important to you: preserving the order of items in your collection or testing for membership in a faster way. In the first case, it's reasonable to store your items in the list, in the second it's better to use set.</p> 
-  <h5 style="text-align: center;">Frozenset</h5> 
+  <h5 style="text-align: center;" id="frozenset">Frozenset</h5> 
   <p><span style="background-color: transparent; color: #000000; font-size: 11pt; font-variant: normal;">The only difference between <code class="language-python">set</code> and <code class="language-python">frozenset</code> is that set is a mutable data type, but frozenset is not. To create a frozenset, we use the </span><code class="language-python">frozenset()</code><span style="background-color: transparent; color: #000000; font-size: 11pt; font-variant: normal;"> function.</span></p> 
   <pre><code class="language-python">empty_frozenset = frozenset()
 print(empty_frozenset)  # frozenset()</code></pre> 
@@ -106,7 +106,7 @@ nested_text.add(text)  # TypeError: unhashable type: 'set'</code></pre>
 nested_text.add(some_frozenset)
 print(nested_text)  # {'!', frozenset({'world', 'hello'})}</code></pre> 
   <p><span style="background-color: transparent; color: #000000; font-size: 11pt; font-variant: normal;">Also, these properties of frozensets allow them to be keys in a Python dictionary, but you will learn more about this later.</span></p> 
-  <h5 style="text-align: center;">Summary</h5> 
+  <h5 style="text-align: center;" id="summary">Summary</h5> 
   <p>All things considered, now you know how to work with sets:</p> 
   <ul> 
    <li>you know how to create a new set and what can be stored in a set (immutable data types only).</li> 

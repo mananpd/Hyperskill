@@ -1,8 +1,8 @@
 type: choice
 is_multiple_choice: false
 options:
-- text: <code>a</code>
 - text: <code>None</code>
+- text: <code>a</code>
 - text: There will be an error.
 - text: <code>[a]</code>
 message_correct: Congratulations!
