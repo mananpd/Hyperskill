@@ -3,7 +3,7 @@
  <head></head>
  <body>
   <p>Previously, you have learned about sets and their most helpful and powerful features of regular expressions. Since some of them are more widespread than others, special shorthands were designed to make them easy to use. The general formula for shorthands is the backslash <code class="language-python">\</code> followed by a letter (for example, <code class="language-python">\s</code>). Let's take a closer look at these metacharacters.</p> 
-  <h5>Shorthands for sets</h5> 
+  <h5 id="shorthands-for-sets">Shorthands for sets</h5> 
   <p>Like sets, each shorthand represents one character in the string, but which character matches the shorthand and which one does not, depends on the shorthand. There are two types of shorthands that can be used in the place of character sets. Shorthands of the first type correspond to strictly described and limited sets of characters. The shorthands of the second type are <strong>negated </strong>shorthands; they correspond to sets banning certain characters, matching to anything else.</p> 
   <p>Shorthands of the first type are denoted by a backslash and a lowercase letter:</p> 
   <ul> 
@@ -26,7 +26,7 @@ re.match('\d\scamels?', '8\ncamels')  # match</code></pre>
   <pre><code class="language-python">re.match('\D\S\W', 'A1-')  # match
 re.match('\D\S\W', '1 A')  # no match</code></pre> 
   <p>Shorthands are very straightforward metacharacters that barely have any specific rules of usage. And they are cool. Why not use them?</p> 
-  <h5> Escaping of shorthands</h5> 
+  <h5 id="escaping-of-shorthands"> Escaping of shorthands</h5> 
   <p>You do not need to escape shorthands in your regular expressions. Although, technically, you can do it. This way, all of the following statements return the same result, no matter what you use, backslash or raw string literal, or neither:</p> 
   <pre><code class="language-python">re.match('\w', 'X')
 re.match('\\w', 'X')
@@ -35,7 +35,7 @@ re.match(r'\w', 'X')</code></pre>
   <pre><code class="language-python">re.match(r'\\w', r'\w')  # match
 re.match(r'\\w', r'\k')  # no match, because \\w isn't a shorthand here</code></pre> 
   <p>Another great feature of shorthands is that they maintain their metacharacter abilities when they are put in sets. Let's discuss it.</p> 
-  <h5>Shorthands in sets</h5> 
+  <h5 id="shorthands-in-sets">Shorthands in sets</h5> 
   <p>As you remember from the previous topic, most regexp metacharacters become regular characters in sets, but shorthands do not do that. This makes it possible to use shorthands as the basis of your custom character set that you can enlarge by adding some other characters. It may be useful, for example, in case you want to build an alphanumeric set for a language that uses some other letters in addition to "default" ones:</p> 
   <pre><code class="language-python">re.match('no[!\w]', 'no!')  # match
 re.match('no[!\w]', 'noo')  # match</code></pre> 
@@ -54,7 +54,7 @@ re.match('[^\d\s]', 'a')   # match, 'a' is not a digit and not a whitespace</cod
 re.match('[\Wa-c]', 'z')  # no match: 'z' is alphanumeric and is not in the a-c range
 re.match('[\Wa-c]', '?')  # match, ? is not alphanumeric</code></pre> 
   <p>There are a few other metacharacters that look like shorthands, but they do a slightly different thing.</p> 
-  <h5>Boundary shorthands</h5> 
+  <h5 id="boundary-shorthands">Boundary shorthands</h5> 
   <p>These shorthands look more or less the same: a backslash and a letter, but they do not match any characters. These tricky fellows formally match empty strings, but more specifically, they match empty strings in certain <em>situations.</em></p> 
   <ul> 
    <li><code class="language-python">\b</code> matches a word boundary. In other words, it matches an empty string between an alphanumeric character (any character matching<code class="language-python">\w</code>) and a non-alphanumeric character (<code class="language-python">\W</code>) or absence of characters. You can use it to make sure that your regular expression will match only a separate word, not a part of a bigger word. </li> 
@@ -97,7 +97,7 @@ re.match("Bring cash\Z", "Bring cash")  # match: \Z is identical to $</code></pr
 re.match("^Bring cash", "Bring cash$")   # match
 re.match("\ABring cash", "Bring cash$")  # match: \A is identical to ^
 re.match("Bring cash", "Bring cash$")    # match: match() matches the start of the string by default</code></pre> 
-  <h5>Summary</h5> 
+  <h5 id="summary">Summary</h5> 
   <p>So, in this topic we have learned:</p> 
   <ul> 
    <li>there are special short designations for some sets of characters;</li> 
