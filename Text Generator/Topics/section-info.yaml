@@ -7,3 +7,7 @@ content:
 - Escaping in regexps
 - Regexp sets and ranges
 - Shorthands
+- Regexp quantifiers
+- Tokenization
+- Defaultdict and Counter
+- Parallel iteration

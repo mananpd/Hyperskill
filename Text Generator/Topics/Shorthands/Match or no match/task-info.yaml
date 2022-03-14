@@ -16,6 +16,13 @@ files:
 
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/15072#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 14 Mar 2022 14:52:56 UTC
 record: -1
+selected_options:
+- 0
+- 1
+- 4
 custom_name: Match or no match?
