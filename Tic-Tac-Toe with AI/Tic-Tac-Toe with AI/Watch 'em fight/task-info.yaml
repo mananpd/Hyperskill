@@ -222,5 +222,78 @@ files:
         TicTacToeTests().run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7441#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: |-
+    Error in test #135
+
+    In this test, the program is running for a long time, more than 15 seconds. Most likely, the program has gone into an infinite loop.
+
+    Please find below the output of your program during this failed test.
+    Note that the '>' character indicates the beginning of the input line.
+
+    ---
+
+    Input command: > start easy easy
+    ---------
+    |       |
+    |       |
+    |       |
+    ---------
+    Making move level "easy"
+    ---------
+    |     X |
+    |       |
+    |       |
+    ---------
+    Making move level "easy"
+    ---------
+    |   O X |
+    |       |
+    |       |
+    ---------
+    Making move level "easy"
+    ---------
+    |   O X |
+    |       |
+    |     X |
+    ---------
+    Making move level "easy"
+    ---------
+    |   O X |
+    |     O |
+    |     X |
+    ---------
+    Making move level "easy"
+    ---------
+    |   O X |
+    |   X O |
+    |     X |
+    ---------
+    Making move level "easy"
+    ---------
+    | O O X |
+    |   X O |
+    |     X |
+    ---------
+    Making move level "easy"
+    ---------
+    | O O X |
+    | X X O |
+    |     X |
+    ---------
+    Making move level "easy"
+    ---------
+    | O O X |
+    | X X O |
+    |   O X |
+    ---------
+    Making move level "easy"
+    ---------
+    | O O X |
+    | X X O |
+    | X O X |
+    ---------
+    Making move level "easy"
+  time: Tue, 15 Mar 2022 17:20:59 UTC
+record: 3

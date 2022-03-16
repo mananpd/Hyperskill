@@ -2,96 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaafeb53-e7cc-4a76-829f-2d3fc371c482" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Break the dataset into bigrams/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Break the dataset into bigrams/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Break the dataset into bigrams/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Create a Markov chain model/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Create a Markov chain model/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Create a Markov chain model/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate full sentences/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate full sentences/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate full sentences/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate random text/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate random text/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate random text/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate sentences based on trigrams/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate sentences based on trigrams/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Generate sentences based on trigrams/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Preprocess the text corpus/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Preprocess the text corpus/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/Preprocess the text corpus/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/task/test/corpus.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/task/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Text Generator/task/text_generator/text_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Dogs/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Dogs/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Dogs/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Dogs/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Money/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Money/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Money/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Money/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Mystery dictionary/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Mystery dictionary/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Mystery dictionary/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Mystery dictionary/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Defaultdict and Counter/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Combining lists/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Combining lists/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Combining lists/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Combining lists/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Printing an iterator/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Printing an iterator/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Printing an iterator/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Printing an iterator/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() in for loops/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() in for loops/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() in for loops/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() in for loops/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() with dictionaries/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() with dictionaries/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() with dictionaries/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/Zip() with dictionaries/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Parallel iteration/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Nursery rhymes/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Nursery rhymes/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Nursery rhymes/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Nursery rhymes/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Same name  Same name/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Same name  Same name/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Same name  Same name/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Same name  Same name/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Regexp quantifiers/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Theory/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Theory/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Theory/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Theory/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Word tokens/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Word tokens/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Word tokens/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/Word tokens/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/Topics/Tokenization/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Text Generator/test_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Text Generator/Topics/Shorthands/Match or no match/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Text Generator/Topics/Shorthands/Match or no match/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Text Generator/Topics/Shorthands/Match or no match/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Text Generator/Topics/Shorthands/Match or no match/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Text Generator/Topics/section-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Text Generator/Topics/section-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Text Generator/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Text Generator/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Text Generator/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Text Generator/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Car/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Car/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Car/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Car/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/Inheritance/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topics/section-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tictactoe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +45,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26OVYbj17Co3owabcGhEq8zkvgT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -121,7 +69,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647294668671</updated>
+      <workItem from="1647294690493" duration="16104000" />
+      <workItem from="1647381982393" duration="229000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$Tic_Tac_Toe_with_AI_Easy_does_it.coverage" NAME="Tic-Tac-Toe with AI/Easy does it Coverage Results" MODIFIED="1647307222945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$tictactoe.coverage" NAME="tictactoe Coverage Results" MODIFIED="1647379399777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tic-Tac-Toe with AI/task" />
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$Tic_Tac_Toe_with_AI_Initial_setup.coverage" NAME="Tic-Tac-Toe with AI/Initial setup Coverage Results" MODIFIED="1647306752640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$Tic_Tac_Toe_with_AI_Watch__em_fight.coverage" NAME="Tic-Tac-Toe with AI/Watch 'em fight Coverage Results" MODIFIED="1647364841844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$Tic_Tac_Toe_with_AI_Signs_of_intelligence.coverage" NAME="Tic-Tac-Toe with AI/Signs of intelligence Coverage Results" MODIFIED="1647366085105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Tic_Tac_Toe_with_AI$Tic_Tac_Toe_with_AI_An_undefeated_champion.coverage" NAME="Tic-Tac-Toe with AI/An undefeated champion Coverage Results" MODIFIED="1647381772298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
