@@ -1,177 +1,104 @@
-import re
-from random import shuffle
-
-win_combos = (
-    [0, 1, 2], [3, 4, 5], [6, 7, 8],
-    [0, 3, 6], [1, 4, 7], [2, 5, 8],
-    [0, 4, 8], [2, 4, 6])
+import random
 
 
-def minimax(board, player, depth=0):
-    if player == 'O':
-        best = -10
-    else:
-        best = 10
+class TicTacToe:
+    def __init__(self):
+        self.board = [["_"] * 3] * 3
+        self.turn = None
+        self.main()
 
-    _win = get_winner(board)
-    if _win == 'X':
-        return -10 + depth, None
-    elif _win == "Draw":
-        return 0, None
-    elif _win == 'O':
-        return 10 - depth, None
+    def initial_state(self):
+        state = input()
+        self.board[0] = [turn for turn in state[0:3]]
+        self.board[1] = [turn for turn in state[3:6]]
+        self.board[2] = [turn for turn in state[6:9]]
 
-    _moves = [i for i in range(9) if board[i] == '_']
-    for k in _moves:
-        board = board[:k] + player + board[k + 1:]
-        _player = 'O' if player == 'X' else 'X'
-        val, _ = minimax(board, _player, depth + 1)
-        # print(val)
-        board = board[:k] + '_' + board[k + 1:]
-        if player == 'O':
-            if val > best:
-                best, best_move = val, k
+    def print_board(self):
+        print('---------')
+        for row in self.board:
+            print("|", end=" ", )
+            for ij in row:
+                if ij == "_":
+                    print(" ", end=" ")
+                else:
+                    print(ij, end=" ")
+            print("|")
+        print('---------')
+
+    def whose_turn(self):
+        counter_X = 0
+        counter_O = 0
+        for row in self.board:
+            for ij in row:
+                if ij == "X":
+                    counter_X += 1
+                elif ij == "O":
+                    counter_O += 1
+        if counter_X == counter_O:
+            self.turn = "X"
         else:
-            if val < best:
-                best, best_move = val, k
-    return best, best_move
+            self.turn = "O"
 
-
-def get_winner(board):
-    win = None
-    for player in ('X', 'O'):
-        for combos in win_combos:
-            if board[combos[0]] == player \
-                    and board[combos[1]] == player \
-                    and board[combos[2]] == player:
-                if win is None:
-                    win = player
-                elif win != player:
-                    win = "Impossible"
-    if win is not None:
-        return win
-    if '_' not in board:
+    def get_outcome(self):
+        board_90 = list(zip(*self.board[::-1]))
+        for row, row_90 in zip(self.board, board_90):
+            if row == ['X', 'X', 'X'] or row_90 == ['X', 'X', 'X']:
+                return "X wins"
+            elif row == ['O', 'O', 'O'] or row_90 == ['O', 'O', 'O']:
+                return "O wins"
+        if [self.board[0][0], self.board[1][1], self.board[2][2]] == ['X', 'X', 'X'] or \
+                [board_90[0][0], board_90[1][1], board_90[2][2]] == ['X', 'X', 'X']:
+            return "X wins"
+        elif [self.board[0][0], self.board[1][1], self.board[2][2]] == ['O', 'O', 'O'] or \
+                [board_90[0][0], board_90[1][1], board_90[2][2]] == ['O', 'O', 'O']:
+            return "O wins"
+        for row in self.board:
+            for ij in row:
+                if ij == "_":
+                    return "Game not finished"
         return "Draw"
-    return None
+
+    def make_move(self):
+        while True:
+            try:
+                x, y = [int(coor) for coor in input().split()]
+                if self.board[x - 1][y - 1] == "_":
+                    self.board[x - 1][y - 1] = self.turn
+                    if self.turn == "X":
+                        self.turn = "O"
+                    else:
+                        self.turn = "X"
+                    break
+                else:
+                    print("This cell is occupied! Choose another one!")
+            except ValueError:
+                print("You should enter numbers!")
+            except IndexError:
+                print("Coordinates should be from 1 to 3!")
+
+    def computer_move(self):
+        while True:
+            x_y_range = [1, 2, 3]
+            x = random.choice(x_y_range)
+            y = random.choice(x_y_range)
+            if self.board[x - 1][y - 1] == "_":
+                self.board[x - 1][y - 1] = self.turn
+                if self.turn == "X":
+                    self.turn = "O"
+                else:
+                    self.turn = "X"
+                break
+
+    def main(self):
+        self.print_board()
+        while True:
+            self.whose_turn()
+            self.make_move()
+            self.print_board()
+            outcome = self.get_outcome()
+            if outcome != "Game not finished":
+                break
+        print(outcome)
 
 
-def draw(board):
-    k = 0
-    line = "---------\n"
-    for i in range(3):
-        line += "| "
-        for j in range(3):
-            line += f"{board[k]} "
-            k += 1
-        line += "|\n"
-    line += "---------"
-    print(line)
-
-
-def analyze(board):
-    win = get_winner(board)
-    if win is None:
-        return True
-    if win in ('X', 'O'):
-        print(win + " wins")
-    else:
-        print(win)
-    return False
-
-
-def next_medium(board, ch):
-    _moves = [i for i, c in enumerate(board) if c == '_']
-    _ch = 'O' if ch == 'X' else 'X'
-    print('Making move level "medium"')
-    for k in _moves:
-        t = board[:k] + ch + board[k + 1:]
-        _t = board[:k] + _ch + board[k + 1:]
-        if get_winner(t) == ch:
-            return t
-        elif get_winner(_t) == _ch:
-            return t
-    shuffle(_moves)
-    k = _moves[0]
-    t = board[:k] + ch + board[k + 1:]
-    return t
-
-
-def next_easy(board, ch):
-    _moves = [i for i, c in enumerate(board) if c == '_']
-    shuffle(_moves)
-    k = _moves[0]
-    t = board[:k] + ch + board[k + 1:]
-    print('Making move level "easy"')
-    return t
-
-
-def next_hard(board, ch):
-    val, k = minimax(board, ch)
-    t = board[:k] + ch + board[k + 1:]
-    print('Making move level "hard"')
-    return t
-
-
-def next_user(t, ch):
-    while True:
-        digs = input("Enter the coordinates: ")
-        if not re.match("[1-9] +[1-9]", digs):
-            print("You should enter numbers!")
-        elif not re.match("[1-3] +[1-3]", digs):
-            print("Coordinates should be from 1 to 3!")
-        else:
-            row, col = digs.split()
-            k = 3 * (int(row) - 1) + int(col) -1
-            if t[k] == '_':
-                t = t[:k] + ch + t[k + 1:]
-                return t
-            else:
-                print("This cell is occupied! Choose another one!")
-
-
-def game(first, second):
-    t = "_________"
-    while True:
-        if first == 'user':
-            t = next_user(t, 'X')
-        elif first == 'easy':
-            t = next_easy(t, 'X')
-        elif first == 'medium':
-            t = next_medium(t, 'X')
-        else:
-            t = next_hard(t, 'X')
-        draw(t)
-        if not analyze(t):
-            break
-        if second == 'user':
-            t = next_user(t, 'O')
-        elif second == 'easy':
-            t = next_easy(t, 'O')
-        elif second == 'medium':
-            t = next_medium(t, 'O')
-        else:
-            t = next_hard(t, 'O')
-        draw(t)
-        if not analyze(t):
-            break
-
-
-def main():
-    t_board = "_________"
-    cmds = {'user', 'easy', 'medium', 'hard'}
-    while True:
-        cmd = input('Input command: ')
-        if cmd == 'exit':
-            break
-        cmd = cmd.split()
-        if len(cmd) < 3 or cmd[0] != 'start' \
-                or cmd[1] not in cmds or cmd[2] not in cmds:
-            print('Bad parameters!')
-            continue
-        draw(t_board)
-        game(cmd[1], cmd[2])
-        break
-
-
-if __name__ == "__main__":
-    main()
+a = TicTacToe()
