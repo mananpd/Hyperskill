@@ -4,6 +4,7 @@ class Calculator:
         self.operators = []
         self.not_exit = True
         self.answer = None
+        self.variables = {}
         self.menu()
 
     def user_input(self):
@@ -18,10 +19,29 @@ class Calculator:
                 return False
             else:
                 print("Unknown command")
+        elif "=" in user_input:
+            user_input = [char.strip(" ") for char in user_input.split("=")]
+            if user_input[0].isalpha():
+                if user_input[1].isalpha():
+                    if user_input[1] in self.variables:
+                        self.variables[user_input[0]] = self.variables[user_input[1]]
+                    else:
+                        print("Unknown variable")
+                elif user_input[1].isdigit():
+                    self.variables[user_input[0]] = int(user_input[1])
+                else:
+                    print("Invalid assignment")
+            else:
+                print("Invalid identifier")
+        elif len(user_input.split()) == 1:
+            if user_input in self.variables:
+                print(self.variables[user_input])
+            else:
+                print("Unknown variable")
         else:
             try:
                 user_input = user_input.split()
-                self.numbers = [int(user_input[i]) for i in range(0, len(user_input), 2)]
+                self.numbers = [user_input[i] for i in range(0, len(user_input), 2)]
                 self.operators = [user_input[i] for i in range(1, len(user_input), 2)]
                 return True
             except ValueError:
@@ -42,10 +62,14 @@ class Calculator:
         return True
 
     def addition(self, num1, num2):
-        self.answer = num1 + num2
+        if num2.isalpha():
+            num2 = self.variables[num2]
+        self.answer = int(num1) + int(num2)
 
     def subtraction(self, num1, num2):
-        self.answer = num1 - num2
+        if num2.isalpha():
+            num2 = self.variables[num2]
+        self.answer = int(num1) - int(num2)
 
     def menu(self):
         while self.not_exit:
