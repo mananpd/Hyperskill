@@ -1,7 +1,12 @@
+from collections import deque
+import re
+
+
 class Calculator:
     def __init__(self):
-        self.numbers = []
-        self.operators = []
+        self.postfix = []
+        self.my_stack = deque()
+        self.precedence = {'-': 1, '+': 1, '*': 2, '/': 2}
         self.not_exit = True
         self.answer = None
         self.variables = {}
@@ -33,33 +38,84 @@ class Calculator:
                     print("Invalid assignment")
             else:
                 print("Invalid identifier")
-        elif len(user_input.split()) == 1:
-            if user_input in self.variables:
-                print(self.variables[user_input])
+        elif user_input.strip(" ").isalpha():
+            if user_input.strip(" ") in self.variables:
+                print(self.variables[user_input.strip(" ")])
             else:
                 print("Unknown variable")
+        elif user_input.isdigit():
+            print(user_input)
         else:
             try:
-                user_input = user_input.split()
-                self.numbers = [user_input[i] for i in range(0, len(user_input), 2)]
-                self.operators = [user_input[i] for i in range(1, len(user_input), 2)]
+                user_input = re.sub(r'([+])\1+', r'\1', user_input)
+                user_input = re.findall('[+-/*]|[0-9]+|[a-z]+|[)(]', user_input)
+                while len(user_input) > 0:
+                    if user_input[0].isalpha() or user_input[0].isdigit():
+                        self.postfix.append(user_input[0])
+                        del user_input[0]
+                    elif len(self.my_stack) == 0 or self.my_stack[len(self.my_stack) - 1] == "(":
+                        self.my_stack.append(user_input[0])
+                        del user_input[0]
+                    elif user_input[0] in self.precedence and self.precedence.get(user_input[0]) > self.precedence.get(self.my_stack[len(self.my_stack) - 1]):
+                        self.my_stack.append(user_input[0])
+                        del user_input[0]
+                    elif user_input[0] in self.precedence and self.precedence.get(user_input[0]) <= self.precedence.get(self.my_stack[len(self.my_stack) - 1]):
+                        while True:
+                            self.postfix.append(self.my_stack.pop())
+                            if len(self.my_stack) == 0:
+                                break
+                            if self.my_stack[len(self.my_stack) - 1] == "(":
+                                break
+                            elif self.my_stack[len(self.my_stack) - 1] == "+":
+                                break
+                            elif self.my_stack[len(self.my_stack) - 1] == "-":
+                                break
+                        self.my_stack.append(user_input[0])
+                        del user_input[0]
+                    elif user_input[0] == "(":
+                        self.my_stack.append(user_input[0])
+                        del user_input[0]
+                    elif user_input[0] == ")":
+                        while True:
+                            self.postfix.append(self.my_stack.pop())
+                            if self.my_stack[len(self.my_stack) - 1] == "(":
+                                self.my_stack.pop()
+                                break
+                        del user_input[0]
+                while True:
+                    if len(self.my_stack) == 0:
+                        break
+                    self.postfix.append(self.my_stack.pop())
                 return True
             except ValueError:
                 print("Invalid expression")
+            except IndexError:
+                print("Invalid expression")
 
-    def operators_reduction(self):
-        for i in range(len(self.operators)):
-            if len(self.operators[i]) * "+" == self.operators[i]:
-                self.operators[i] = "+"
-            elif len(self.operators[i]) * "-" == self.operators[i]:
-                if len(self.operators[i]) % 2 == 0:
-                    self.operators[i] = "+"
+    def calculation(self):
+        for element in self.postfix:
+            try:
+                if element.isdigit():
+                    self.my_stack.append(int(element))
+                elif element.isalpha():
+                    if element in self.variables:
+                        self.my_stack.append(self.variables[element])
+                    # else:
+                    #     print("Unknown variable")
                 else:
-                    self.operators[i] = "-"
-            else:
-                print("error")
-                return False
-        return True
+                    num2 = self.my_stack.pop()
+                    num1 = self.my_stack.pop()
+                    if element == "+":
+                        ans = num1 + num2
+                    elif element == "-":
+                        ans = num1 - num2
+                    elif element == "*":
+                        ans = num1 * num2
+                    elif element == "/":
+                        ans = num1 / num2
+                    self.my_stack.append(ans)
+            except IndexError:
+                print("Invalid expression")
 
     def addition(self, num1, num2):
         if num2.isalpha():
@@ -74,17 +130,11 @@ class Calculator:
     def menu(self):
         while self.not_exit:
             if self.user_input():
-                if self.operators_reduction():
-                    if len(self.numbers) > 0:
-                        self.answer = 0
-                        self.addition(self.answer, self.numbers.pop(0))
-                        for i in range(len(self.operators)):
-                            if self.operators[i] == "+":
-                                self.addition(self.answer, self.numbers.pop(0))
-                            elif self.operators[i] == "-":
-                                self.subtraction(self.answer, self.numbers.pop(0))
-                if self.answer is not None:
-                    print(self.answer)
+                self.calculation()
+                if len(self.my_stack) != 0:
+                    print(int(self.my_stack.pop()))
+                    self.postfix = []
+                    self.my_stack = deque()
 
 
 a = Calculator()
