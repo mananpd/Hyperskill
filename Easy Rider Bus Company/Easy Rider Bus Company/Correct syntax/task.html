@@ -1,4 +1,4 @@
-<h5>Description</h5>
+<h5 id="description">Description</h5>
 
 <p>You managed to fill in all the missing data and correct the mistakes with the types. However, you noticed that there are multiple problems with suffix names for the stops: sometimes they are incorrect, and sometimes they are simply missing. As if that was not enough, you also realized that there are errors in the arrival times.</p>
 
@@ -6,21 +6,27 @@
 
 <p>Here are the documents that you have: <a target="_blank" href="https://stepik.org/media/attachments/lesson/412967/Documentation.jpg" rel="noopener noreferrer nofollow">documentation</a> and <a target="_blank" href="https://stepik.org/media/attachments/lesson/412967/Diagram_of_the_bus_line.jpg" rel="noopener noreferrer nofollow">diagram of the bus lines</a>.</p>
 
-<h5>Objectives</h5>
+<h5 id="objectives">Objectives</h5>
 
 <ol>
 	<li>The string containing the data in JSON format is passed to standard input.</li>
 	<li>Check that the data format complies with the documentation. </li>
-	<li>Only the fields that have such a requirement are relevant.</li>
-	<li>Like in the previous stage, print the information about the number of found errors in total and in each field.</li>
+	<li>Only the fields that have such a requirement are relevant, i.e. <code class="language-json">stop_name</code>, <code class="language-json">stop_type</code>, <code class="language-json">a_time</code>, so, please, count errors only for them.</li>
+	<li>Like in the previous stage, print the information about the number of found errors in total and in each field. Remember that there might be no errors at all.</li>
 	<li>The output should have the same formatting as shown in the example.</li>
 </ol>
 
 <p>If you can't find the necessary information in the stage description, it can probably be found in the attached documentation.</p>
 
-<p>Note that the time format is military time (24 hours, <code class="language-json">hh:mm</code>), which does not mean that all the digits are present. Keep in mind certain restrictions: for example, the first digit cannot be 3, 4, and so on.</p>
+<p>Note that the time format is military time (24 hours, <code class="language-json">hh:mm</code>). That means that there are certain restrictions:</p>
 
-<h5>Example</h5>
+<ul>
+	<li>the first digit cannot be 3, 4, etc.;</li>
+	<li>hours less than 10 should have zero in front of them, e.g. <code class="language-json">08:34</code>; </li>
+	<li>the delimiter should be colon <code class="language-json">:</code>.</li>
+</ul>
+
+<h5 id="example">Example</h5>
 
 <p>Input:</p>
 

@@ -98,6 +98,9 @@ files:
   text: |
     # Write your awesome code here
   learner_created: false
-feedback_link: https://hyperskill.org/projects/128/stages/680/implement#comment
-status: Unchecked
-record: -1
+feedback_link: https://hyperskill.org/learn/step/10888#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 02 Apr 2022 17:26:38 UTC
+record: 1
