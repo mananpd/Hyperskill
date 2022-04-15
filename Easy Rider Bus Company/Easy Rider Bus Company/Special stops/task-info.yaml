@@ -84,7 +84,7 @@ files:
                                              "Expected output:\n\n"
                                              f"Start stops: {len(result[0])} {list(result[0])}\n"
                                              f"Transfer stops: {len(result[1])} {list(result[1])}\n"
-                                             f"Finish stops: {len(result[1])} {list(result[2])}")
+                                             f"Finish stops: {len(result[2])} {list(result[2])}")
             return CheckResult.correct()
 
 
