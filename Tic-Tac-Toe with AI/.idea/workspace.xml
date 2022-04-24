@@ -2,12 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaafeb53-e7cc-4a76-829f-2d3fc371c482" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/tictactoe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A GFP strand/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A GFP strand/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A GFP strand/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A complementary strand/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A complementary strand/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/A complementary strand/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Cut the plasmid/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Cut the plasmid/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Cut the plasmid/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/It's sticking time/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/It's sticking time/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/It's sticking time/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Ooze! The glooowing bacteria/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Ooze! The glooowing bacteria/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/Ooze! The glooowing bacteria/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/The ends that stick/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/The ends that stick/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/The ends that stick/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/task/bacteria.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/Create Glowing Bacteria/task/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/course-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Create Glowing Bacteria/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/Easy Rider Bus Company.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Bus line info/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Bus line info/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Bus line info/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Checking the data type/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Checking the data type/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Checking the data type/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Correct syntax/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Correct syntax/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Correct syntax/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/On-demand/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/On-demand/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/On-demand/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Special stops/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Special stops/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Special stops/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Unlost in time/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Unlost in time/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/Unlost in time/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/task/easyrider/easyrider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Easy Rider Bus Company/task/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Advanced e-mail verification/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Advanced e-mail verification/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Advanced e-mail verification/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Advanced e-mail verification/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Find the list/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Find the list/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Find the list/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Find the list/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Greedy, greedy operator/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Greedy, greedy operator/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Greedy, greedy operator/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Greedy, greedy operator/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Phone numbers/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Phone numbers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Phone numbers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Phone numbers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Theory/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Groups and alternations/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Filter the results/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Filter the results/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Filter the results/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Filter the results/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Match length/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Match length/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Match length/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Match length/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Printing the matched string/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Printing the matched string/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Printing the matched string/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Printing the matched string/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Theory/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Match object and flags/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Anonymizing the dataset/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Anonymizing the dataset/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Anonymizing the dataset/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Anonymizing the dataset/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Matching username requirements/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Matching username requirements/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Matching username requirements/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Matching username requirements/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Theory/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Theory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Theory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/Theory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/Regexp functions in Python/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/Topics/section-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/course-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/course-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Easy Rider Bus Company/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/Bittersweet occasion/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/Car/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/Car/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/I've got plants/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/SuperRobot/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/Theory/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Inheritance/Theory/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Inheritance/Theory/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Itertools module/Choosing a name/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Itertools module/Choosing a name/task-remote-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Topics/Itertools module/Flower shop/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Itertools module/Flower shop/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Itertools module/Flower shop/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Itertools module/Flower shop/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Itertools module/Theory/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Itertools module/Theory/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topics/Itertools module/Theory/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topics/Itertools module/Theory/task.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +202,7 @@
       <workItem from="1647294690493" duration="16104000" />
       <workItem from="1647381982393" duration="5919000" />
       <workItem from="1648060595191" duration="49000" />
+      <workItem from="1650060055814" duration="100000" />
     </task>
     <servers />
   </component>

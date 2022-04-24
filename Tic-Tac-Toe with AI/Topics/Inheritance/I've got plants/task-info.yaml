@@ -1,13 +1,13 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: type(opuntia) == Plant
-- text: isinstance(opuntia, object)
-- text: type(basil) == object
-- text: isinstance(opuntia, Plant)
-- text: isinstance(basil, Plant)
-- text: type(opuntia) == Cactus
 - text: type(basil) == Cactus
+- text: isinstance(basil, Plant)
+- text: isinstance(opuntia, object)
+- text: isinstance(opuntia, Plant)
+- text: type(opuntia) == Cactus
+- text: type(opuntia) == Plant
+- text: type(basil) == object
 message_correct: Congratulations!
 message_incorrect: Incorrect solution
 files:
